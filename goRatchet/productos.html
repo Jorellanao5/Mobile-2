@@ -1,6 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/ratchet.js"></script>
+	<script type="text/javascript" src="js/push.js"></script>
+    <script type="text/javascript" src="js/sliders.js"></script>
+    <script type="text/javascript" src="js/ws.js"> </script>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -8,13 +13,9 @@
 <title>App con Ratchet</title>
     <link rel="stylesheet" type="text/css" href="css/ratchet.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.min.css"/>
-    <script type="text/javascript" src="js/ratchet.min.js"></script>
-	<script type="text/javascript" src="js/push.js"></script>
-    <script type="text/javascript" src="js/sliders.js"></script>
 </head>
 
-<body>   
-    <section class="content" id="page1">
+<body>
     
     	<header class="bar bar-nav">
   			<h1 class="title">PRODUCTOS WS</h1>
@@ -43,7 +44,28 @@
           </a>
         </nav>
         
-    </section>
+		<div class="content">
+
+        	<div class="content-padded">
+				<div class="card">            
+                    <ul class="table-view">
+                        <li class="table-view-cell">
+                          <span class="media-object pull-left icon icon-bars"></span>
+                            PRODUCTOS
+                            <button id="productos" class="btn icon icon-down" style="text-decoration:none">
+                            	<a href="javascript:location.reload()" style="text-decoration:none;">
+                                	<span class="icon icon-refresh"></span>
+                            	</a>
+                            </button>
+                        </li>
+                        <div class="card" id="producto">
+                            <ul class="table-view">
+                            </ul>
+                        </div>                
+                    </ul>
+                 </div>
+            </div>
+        </div>
     
 </body>
 
